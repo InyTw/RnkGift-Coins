@@ -1,0 +1,24 @@
+name: RankGift
+version: 1.0
+main: io.github.rankgift.RankGift
+api-version: 1.21.4
+commands:
+  gift:
+    description: 送出或購買 Rank
+    usage: /gift [rank]
+  rank:
+    description: 查看或更改 Rank
+    usage: /rank <rank>
+  rankbuy:
+    description: 購買 Rank
+    usage: /rank buy
+permissions:
+  rankgift.gift:
+    description: 許可玩家使用 /gift 指令
+    default: true
+  rankgift.rank:
+    description: 許可玩家查看或更改 Rank
+    default: true
+  rankgift.rankbuy:
+    description: 許可玩家購買 Rank
+    default: true

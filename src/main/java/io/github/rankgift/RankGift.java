@@ -22,7 +22,8 @@ public class RankGift extends JavaPlugin {
 
         getCommand("gift").setExecutor(new GiftCommand());
         getCommand("rank").setExecutor(new RankCommand());
-
+        getCommand("setcoins").setExecutor(new SetCoinsCommand());
+        
         getServer().getScheduler().runTaskTimer(this, new MVPPlusPlusChecker(), 0L, 20L * 60 * 60 * 24); // 每天檢查
         getLogger().info("RankGift 插件已啟用！");
     }

@@ -12,6 +12,9 @@ commands:
   rankbuy:
     description: 購買 Rank
     usage: /rank buy
+  setcoins:
+    description: 設定玩家的 Coins 數量
+    usage: /setcoins <玩家> <數量>
 permissions:
   rankgift.gift:
     description: 許可玩家使用 /gift 指令
@@ -22,3 +25,6 @@ permissions:
   rankgift.rankbuy:
     description: 許可玩家購買 Rank
     default: true
+  rankgift.setcoins:
+    description: 允許設定玩家的 Coins 數量
+    default: op
